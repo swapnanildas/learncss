@@ -1,8 +1,18 @@
+html{
+    font-size: 30px;
+    
+}
+
 #div1{
-    height:100vh;
-    width: 100vw;
-    background-color: red;
+    height:200px;
+    width: 200px;
+    background-color: grey;
     /* opacity: 0.5; */
+    border-width: 5px 6px ;
+    border-style: solid;
+    border-color: red;
+    border-radius: 4px;
+    
 }
 #div2{
     height: 50%;
@@ -11,3 +21,34 @@
 
 
 }
+#sample-para{
+    padding-left: 2px;
+    border: 2px solid rgba(47, 79, 79, 0.5);
+    /* border-width: 2px;
+    border-color: darkslategray;
+    border-style: solid; */
+    border-left: 6px solid darkslategrey;
+    /* border-top-left-radius: 2px; */
+    border-radius: 4px;
+    /* border-bottom-left-radius: 5px; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(116, 114, 118);
+    transition: all 0.2s ease-in-out;
+    
+    
+}
+#sample-para:hover{
+    color: rgba(45, 255, 245,1);
+    box-shadow: 0 5px 15px  rgba(169, 239, 141,0.5);;
+    cursor: pointer;
+    
+}
+#image-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://www.apple.com/v/iphone-14-pro/c/images/overview/display/display_brilliant__cxm59tsbth4y_large.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
