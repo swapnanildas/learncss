@@ -95,11 +95,17 @@ aside {
 button[type="submit"] {
 
     font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive;
     background-color: black;
     color: white;
     padding: 10px;
 
 }
+button[type="submit"]:hover{
+    box-shadow: grey;
+    cursor: pointer;
+}
+
 
 .widget-title {
     font-size: 1.5rem;
