@@ -46,7 +46,9 @@ body{
 .text-center{
     text-align: center;
 }
-
+/* #nav-bar{
+    position: fixed;
+} */
 /* Social Section */
 
 #my-namecontainer{
@@ -80,4 +82,29 @@ body{
 #social{
     display: inline;
 
+}
+
+
+/* About */
+
+#profile-pic img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-top: -16vh;
+    position: relative;
+    border: 10px slategrey double;
+    box-shadow: 10px 10px 50px 5px black;
+
+    /* opacity: 0.7; */
+    /* box-shadow: 11px 11px 11px 11px rgba(rgb(27, 18, 18), green, blue, 1); */
+}
+
+#about-text{
+    margin-top: 10vh;
+    text-align: center;
+    /* width: auto; */
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
 }
