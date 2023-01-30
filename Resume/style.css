@@ -9,30 +9,35 @@ body{
 
 #body-header{
     height : 65vh;
-    background-image: url(image/macbook_mouse.jpg);
+    background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.7;
     background-attachment: fixed;
+    padding: 2rem;
+    /* filter: blur(3px); */
+    /* margin-top: 2rem; */
 
 }
 /* Horizontal-List */
 .horizontal-list{
     list-style: none;
     padding-left: 0px;
+    margin: 0px;
 }
 .horizontal-list li{
     display: inline-block;
     margin: 0px 8px 8px 0px;
 }
 .horizontal-list li a{
+    opacity: 0.6;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 .horizontal-list li a:hover{
-    opacity: 0.6;
+    opacity: 1;
     cursor: pointer;
     transition: opacity 0.5s;
     text-decoration: none;
@@ -42,11 +47,37 @@ body{
     text-align: center;
 }
 
+/* Social Section */
+
+#my-namecontainer{
+    margin-top: 20vh;
+}
+
 #header-name{
     font-size: 5rem;
     color: white;
     text-align: center;
     justify-content: center;
-    padding-top: 15%;
+    margin-bottom: 0.5rem;
+    /* filter: blur(0px); */
+    /* filter: blur(3px); */
+    /* padding-top: 15%; */
     
+}
+.social-icon li a img{
+    mask: black;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 0px 4px 4px 0px;
+    filter: grayscale(100%);
+}
+.social-icon li a img:hover{
+    filter: none;
+    /* box-shadow: 1px 0px s black; */
+    /* border-radius: 50%; */
+}
+#social{
+    display: inline;
+
 }
