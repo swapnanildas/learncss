@@ -143,24 +143,133 @@ section:nth-child(2n) {
 
 .skills-display {
     width: 70%;
-    /*height: 100px;*/
-    /*border: 2px solid black; 	*/
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:left;
 }
+.skills-display>div{
+    
+    margin: 20px 20px 20px 20px;
+    height: 2rem;
+    /* width: 200px;
+    margin-bottom: 10px;
+    padding:10px;
+    background-color: antiquewhite; */
+    border-radius: 2rem;
+    border: 2px solid black;
 
-
+    box-shadow: 3px 3px 10px 5px rgba(20, 20, 20, 0.4);
+}
+.skill-progress{
+    width: 10rem;
+    height: 3.5 rem;
+    background-color: lightyellow;
+    /* border-radius: 2rem; */
+    border: 2px solid black ;
+}
 
 /* Common Margin Classes */
 .mb75px {
     margin-bottom: 75px;
 }
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+    position: inherit;
+    border-radius:0.8rem ;
+}
+.fifty-percent{
+    width: 50%;
+    height: inherit;
+    position: inherit;
+    border-radius: 0.8rem;
 
+}
+.five-percent{
+    width: 5%;
+    height: inherit;
+    position: inherit;
+    border-radius: 0.8rem;
+
+}
+.ninety-nine-percent{
+    width: 99%;
+    height: inherit;
+    position: inherit;
+    border-radius: 0.8rem;
+
+}
+.ninety-percent{
+    width: 50%;
+    height: inherit;
+    position: inherit;
+    border-radius: 0.8rem;
+
+}
+.ten-percent{
+    width: 10%;
+    height: inherit;
+    position: inherit;
+    /* position: inherit; */
+    border-radius: 0rem;
+
+}
+.ninety-five-percent{
+    width: 95%;
+    height: inherit;
+    position: inherit;
+    border-radius: 0.8rem;
+
+}
 /*common color classes */
 
 .text-highlight {
     color: #2857a4;
     font-weight: 600;
 
+}
+.mb-blue{
+    background-color: #2857a4;
+    border-radius: 2rem;
+}
+.mb-yellow{
+    background-color: rgb(205, 205, 55);
+    border-radius: 2rem;
+}
+.mb-green{
+    background-color: #1a823d;
+    border-radius: 2rem;
+}
+.mb-violet{
+    background-color: #3d2cc4;
+    border-radius: 2rem;
+}
+.mb-black{
+    background-color: #000000;
+    border-radius: 2rem;
+}
+.mb-red{
+    background-color: #cf2525;
+    border-radius: 2rem;
+}
+.mb-orange{
+    background-color: #f59312;
+    border-radius: 2rem;
+}
+/* Skill Progress Section */
+.skill-name{
+    margin-top: 0.5rem;
+    color: black;
+    margin-left: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    /* text-align: center; */
+    /* align-items: center; */
+    justify-content: center;
+    position: absolute;
+}
+.skill-name[id="too-long"]{
+    font-size: 0.8rem;
+    /* justify-content: center; */
 }

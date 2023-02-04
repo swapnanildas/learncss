@@ -1,0 +1,6 @@
+#container{
+	height:200px;
+	width: 200px;
+	border: 4px blaxk solid;
+	background: linear-gradient(90deg, red,blue);
+}
