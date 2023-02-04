@@ -1,0 +1,23 @@
+html{
+    font-family: 'Josefin Sans', sans-serif;
+}
+#trx-box{
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right,#0700de,#ddffc9);
+    position: fixed;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+
+
+}
+#trx-box:target{
+    height: 30%;
+    width: 30%;
+
+    top: 25%;
+    left: 25%;
+    /* display: block; */
+}
