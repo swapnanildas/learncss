@@ -7,6 +7,7 @@ html{
     top: 0;
     left: 0;
     background: linear-gradient(to right,#0700de,#ddffc9);
+    border: black solid 2px;
     position: fixed;
     overflow: hidden;
     transition: all 0.5s ease-in-out;

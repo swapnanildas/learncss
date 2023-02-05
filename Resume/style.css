@@ -111,7 +111,7 @@ section:nth-child(2n) {
 }
 .section-heading span{
     font-size: 40px;
-    color: #2857a4;
+    color: #142b52;
     display: inline-block;
     padding-top: 10px;
     margin-right: 0.5rem;
@@ -272,4 +272,85 @@ section:nth-child(2n) {
 .skill-name[id="too-long"]{
     font-size: 0.8rem;
     /* justify-content: center; */
+}
+
+
+/* Contact Section */
+
+section#contact{
+    margin-left: 10%;
+    margin-top: 10%;
+    height: 75vh;
+    width: 75vw;
+    /* border: #000000 solid 2px; */
+    align-items: baseline;
+    background: linear-gradient(to left top, #ee49fd,#6157ff 50%);
+    border-radius: 1.5rem;
+    box-shadow: 2px 2px 50px 1px;
+
+}
+section#contact>h1{
+    align-self: center;
+    /* color: #000000; */
+}
+
+.container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    min-width: 40%;
+}
+.container input,textarea{
+    display: block;
+    margin-bottom: 2rem;
+    width: 100%;
+    resize: none;
+}
+.container div{
+    height:75%;
+    width: 43%;
+    margin-top: 2rem;
+    padding: 0px;
+}
+.container input[type='submit']{
+    /* top: 1.5 rem; */
+    margin-top: 1%;
+    height:3rem;
+    width: 15rem;
+    position:absolute;
+    opacity: 0.9;
+    /* align-self: center; */
+    color: white;
+    border: 2px solid white;
+    background:  #6157ff ;
+    text-align: center;
+}
+.container input[type='submit']:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: all ease-in-out 10s ;
+}
+.container input[type='submit']:active{
+    opacity: 0.5;
+}
+.container [type='text'],.container [type='email']{
+    background:  #6157ff;
+    color: white;
+    border: none;
+    border-bottom: white;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+::placeholder{
+    color: white;
+    opacity:0.7;
+}
+.no-outline:focus {
+    outline: none;
 }
