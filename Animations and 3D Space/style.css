@@ -1,0 +1,139 @@
+@keyframes bounceBall{
+    0%{
+        translate:0% 0%;
+    }
+    10%{
+        /* translate: 0% -25%; */
+        width: 180px;
+    }
+    25%{
+        translate: 0% -50%;
+        /* height:100px; */
+        /* width:150px; */
+        /* border-radius: 60%; */
+
+    }
+    50%{
+        translate: 0% 0%;
+        margin-left: 5%;
+        width:200px;
+        height:180px;
+        /* border-radius: 50%; */
+    }
+    75%{
+        translate:0% -50%;
+        height: 200px ;
+        margin-left:0px;
+        /* border-radius: 75%; */
+
+    }
+    100%{
+        translate: 0% 0%;
+        /* border-radius: 55%; */
+    }
+    
+}
+
+#container #div1{
+    height:200px;
+    width : 200px;
+    background: red;
+    /* align-self: center; */
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-top : 20%;
+    display: flex;
+    align-items: center;
+    /* transform: rotate(10deg); */
+    animation:  bounceBall 1.5s ease-in-out infinite ;
+    /* transition: all 0.8s ease-in-out infinite; */
+}
+#container #wall{
+    height: 400px;
+    width: 50px;
+    border: 2px solid black;
+    margin-left: 31%;
+    margin-top: 6.5%;
+    position: absolute;
+    background: repeating-linear-gradient(#e66465, #e66465 20px, #9198e5 20px, #9198e5 25px);
+    ;
+}
+
+#container #floor{
+    width:100vw;
+    border:4px solid black;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    margin-top: 30%;
+
+}
+/* #container #div1:hover{ */
+
+#container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+
+
+/*    Styling for 3D Cube   */
+
+.cube{
+    height: 200px;
+    width:200px;
+    position: relative;
+    margin: 100px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 4s ease-in-out;
+    transform: rotateX(-25deg) rotateY(25deg);
+}
+
+.face{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s;
+    top: 20%;
+    left: 20%;
+}
+
+.face-1{
+    background-color: #9198e5;
+}
+
+ .face-2{
+    background-color: #e66465;   
+    transform: rotateY(90deg) translateZ(100px) translateX(-100px);
+    
+}
+.face-3{
+    background-color: green;
+    transform: rotateY(90deg) translateZ(-100px) translateX(-100px);  
+}
+.face-4{
+    background-color: yellow;   
+    transform: rotateX(90deg) translateY(100px) translateZ(100px);
+}
+.face-5{
+    background-color: darkred;   
+    transform: rotateX(90deg) translateY(100px) translateZ(-100px);
+}
+.face-6{
+    background-color: blue;
+    transform: translateZ(200px);     
+} 
+
+.cube:hover{
+    animation: spinning 2s infinite;
+
+}
+
+@keyframes spinning {
+  from  { transform: rotateX(-25deg) rotateY(25deg) ;   }
+  to    { transform:  rotateZ(250deg) rotateY(  50deg); }
+}
